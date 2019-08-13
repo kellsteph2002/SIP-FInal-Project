@@ -1,0 +1,89 @@
+<!DOCTYPE html>>
+
+<html>
+
+  <head>
+
+    <title> Confidence </title>
+
+    <link rel= "stylesheet" href= sip3.css>
+
+  </head>
+
+
+
+  <body>
+
+    <ul><center>
+      <li><a href="./sip9.html">History</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Teenage Years</a>
+        <div class="dropdown-content">
+          <a href="./sip3.html">Confidence</a>
+        </div>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Workforce</a>
+        <div class="dropdown-content">
+          <a href="./sip10.html">Obstacles</a>
+        </div>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Activities</a>
+          <div class="dropdown-content">
+            <a href="./sip6.html">Games</a>
+            <a href="./sip7.html">Quizzes</a>
+          </div>
+      <li><a href="./sip8.html">Resources</a></li>
+      <li><a href="./sip.html">Home</a></li>
+    </center></ul>
+
+
+    <body style="background-color:powderblue;">
+    <h1> <center> <em> Confidence </em></center></h1>
+
+
+    <h2> Contribute to the forum :)<br> This is a place where you can discuss everyday problems that you encounter and recieve advice from women all over.</h2>
+    <h3>(You can drag  the box in  order to display the box further) </h3>
+
+
+    <div class="comment">
+    <textarea id="title" type="text "rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......">  </textarea>
+    <input type="submit" value="Post" onclick="insert()" style="width:50px;" /></form>
+    </div>
+    <div id="display"></div>
+    <script type="text/javascript">
+    var titles = [];
+    var titleInput = document.getElementById("title");
+    var messageBox = document.getElementById("display");
+    function Allow()
+    {
+    if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+    {
+    user.title.value="";
+    alert("Please Enter only alphabets");
+    }
+    window.location.reload()
+    }
+    function insert () {
+    titles.push(titleInput.value);
+    clearAndShow();
+    }
+    function clearAndShow ()
+    {
+    titleInput.value = "";
+    messageBox.innerHTML = "";
+    messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+    }
+
+    </script>
+
+<p><em>"There was a time when I was not confident being a woman in tech because I was the only female in my python class, but after coming to Girls Who Code, I was motivated by being apart of a comminuty of females who are passionate about coding. I learned about mnany inspiring women who succeeded despite odds. Now, I have no doubt that I aim to be one of them. " - Daphne Tang, 17</em></p>
+<p>Storytime #2...</p>
+<p>Storytime #3...</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/adUToRtRkaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qYAiYMlOCI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </body>
+
+
+</html>
